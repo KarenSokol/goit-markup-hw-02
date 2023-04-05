@@ -7,6 +7,7 @@
   --hero-footer-bcgcolor: #2f303a;
   --team-bcgcolor: #f5f4fa;
   --logo-color: #000000;
+  --button-bcgcolor: #188ce8;
 }
 
 /* MAIN PAGE */
@@ -15,14 +16,11 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
-
 }
 
 .sub-heading {
@@ -75,6 +73,10 @@ body {
   color: var(--accent-color);
 }
 
+.nav-list .link.current {
+color: var(--accent-color);
+}
+
 .contacts-list .contacts-link {
   font-style: normal;
 
@@ -101,7 +103,7 @@ body {
 
 /* Hero section */
 
-.title-heading {
+.title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -119,13 +121,12 @@ body {
 
   color: var(--main-heading-color);
   background-color: var(--accent-color);
-
 }
 
 .hero-section-button:hover,
-.hero-section-button:focus {
-  color: var(--accent-color);
-  background-color: var(--main-heading-color);
+.hero-section-button:focus,
+.hero-section-button:active {
+  background-color: var(--button-bcgcolor);
 }
 .hero-section {
   background-color: var(--hero-footer-bcgcolor);
@@ -191,7 +192,6 @@ body {
   line-height: 1.19;
 
   color: var(--main-heading-color);
-
 }
 
 .contact-address {
@@ -217,6 +217,11 @@ body {
 /* Button list */
 
 .filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
   background-color: var(--team-bcgcolor);
   color: var(--secondary-text-color);
 }
